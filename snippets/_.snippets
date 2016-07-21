@@ -279,3 +279,13 @@ snippet AGPL
 
 	You should have received a copy of the GNU Affero General Public License
 	along with this program. If not, see <http://www.gnu.org/licenses/>.
+snippet BLOGPOST
+	---
+	layout: post
+	title: "${0}"
+	date: `strftime("%Y-%m-%d %H:%M:%S")`
+	image: /assets/img/headers/${1}.jpg
+	author: `g:snips_author`
+	--
+	${2}
+	
