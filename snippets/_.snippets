@@ -282,10 +282,10 @@ snippet AGPL
 snippet BLOGPOST
 	---
 	layout: post
-	title: "${0}"
+	title: "${1}"
 	date: `strftime("%Y-%m-%d %H:%M:%S")`
-	image: /assets/img/headers/${1}.jpg
+	image: /assets/img/headers/${2}.jpg
 	author: `g:snips_author`
-	--
-	${2}
+	---
+	${0}
 	
