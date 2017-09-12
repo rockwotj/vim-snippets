@@ -1,0 +1,17 @@
+
+snippet cc_lib "C++ Library" b
+cc_library(
+    name = "${1:name}",
+    srcs = ["$1.cc"],
+    hdrs = ["$1.h"],
+    deps = [],
+)
+endsnippet
+
+snippet cc_bin "C++ Binary" b
+cc_binary(
+    name = "${1:name}",
+    srcs = ["$1.cc"],
+    deps = [],
+)
+ endsnippet 
