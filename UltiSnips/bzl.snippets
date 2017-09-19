@@ -14,4 +14,61 @@ cc_binary(
     srcs = ["$1.cc"],
     deps = [],
 )
- endsnippet 
+endsnippet
+
+snippet cc_test "C++ Test" b
+cc_test(
+    name = "${1:name}",
+    srcs = ["$1_test.cc"],
+    deps = [],
+)
+endsnippet
+
+snippet java_bin "Java Binary" b
+java_binary(
+    name = "${1:name}",
+    srcs = ["$1.java"],
+    main_class = "$1",
+    deps = [],
+)
+endsnippet
+
+snippet java_lib "Java Library" b
+java_library(
+    name = "${1:name}",
+    srcs = ["$1.java"],
+    deps = [],
+)
+endsnippet
+
+snippet java_test "Java Test" b
+java_test(
+    name = "${1:name}",
+    srcs = ["$1Test.java"],
+    deps = [],
+)
+endsnippet
+
+snippet py_bin "Python Binary" b
+py_binary(
+    name = "${1:name}",
+    srcs = ["$1.py"],
+    deps = [],
+)
+endsnippet
+
+snippet py_lib "Python Library" b
+py_library(
+    name = "${1:name}",
+    srcs = ["$1.py"],
+    deps = [],
+)
+endsnippet
+
+snippet py_test "Python Test" b
+py_test(
+    name = "${1:name}",
+    srcs = ["$1_test.py"],
+    deps = [],
+)
+endsnippet
